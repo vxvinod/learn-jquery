@@ -3,10 +3,20 @@
 	<head>
 		<title> </title>
 
+		<script src="jquery-1.10.2.js"> </script>
+
 		<style>
-		ul li {color :green;}
-		.emphasis{color : blue;}
+		
+		.emphasis{font-weight : bold;}
 		</style>
+
+
+		<script>
+		$(document).ready(function(){					//it loads the whole document to apply jquery
+			$('li:first-child').addClass('emphasis');		
+		});
+		
+		</script>
 	</head>
 
 	<body>
@@ -18,11 +28,7 @@
 		</ul>
 
 
-		<script src="jquery-1.10.2.js"> </script>
-
-		<script>
-		$('ul li').addClass('emphasis');
-		</script>
+		
 
 	</body>
 
