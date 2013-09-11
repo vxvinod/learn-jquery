@@ -1,0 +1,72 @@
+<html>
+	
+	<head>
+		<title> </title>
+
+		<script src="jquery-1.10.2.js"> </script>
+
+		<style>
+		li { color : blue;}
+		.emphasis{color : red;}
+		.check{font-weight : bold;}
+		</style>
+
+
+		<script>
+		$(document).ready(function(){					//it loads the whole document to apply jquery
+		//	$('ul.emphas').children('li').eq(2).prev().text('added with jquery');		
+		$('ul.emphas').parent('.container').removeClass('container').addClass('check');
+		});
+		
+		</script>
+	</head>
+
+	<body>
+		<div class ='container'>
+			<h2>Welcome to Jquery Learning </h2>
+			<p>Hi this is the place where you ca learn about jquery and explore more about the jquery this is to <br>
+				check whether jquery is working fine</p>
+		<div class ="container">
+				<ul class="emphas" >
+
+					<li> hello 1</li>
+					<li> hello 2</li>
+					<li> hello 3</li>
+						<ul>
+							<li> hello 4 </li>
+							<li> hello 5 </li>
+							<li> hello 6 </li>
+
+						</ul>
+				</ul>
+			</div>
+
+
+
+
+
+	<!-- Notes
+
+		children()- to find all the children
+		find()- to find all the child under ul
+		addClass()- adding class to particular instance
+		removeClass()- removiing classes for that instance
+		css()-adding css to the instance
+		first()- selects the first instance of the node
+		eq(1)- selecting the instance  starts with eq(0) 
+		prev()-selects the previous element
+		next()- selects the next element
+		closest()-find closest selector
+		parent()-finds first parent
+		parents()-finds all the parent 
+	$('ul.emphas').find('li').removeClass('emphas').addClass('emphasis');
+	$('ul.emphas').children('li').last().addClass('emphasis');		
+	$('ul.emphas').children('li').first().text('added with jquery');
+	$('ul.emphas').children('li').eq(2).prev().text('added with jquery');
+	-->
+
+		
+
+	</body>
+
+</html>
