@@ -1,0 +1,93 @@
+<html>
+
+	<head>
+		<title> Jquery lesson 4 </title>
+		<link rel="stylesheet" href="day.css"></link> 
+	</head>
+
+	<body>
+
+		<h1> Welcome </h1>
+		<button data-fuck="day">Day </button>
+		<button data-fuck="night">Night </button>
+
+
+		<script src="jquery-1.10.2.js"> </script>
+
+		<script>
+
+			(function(){
+				$('button').on('click',function(){
+
+					var $this=$(this),
+						stylesheet=$this.data("fuck");
+					$('link').attr("href",stylesheet+'.css');
+
+					$this
+						.siblings('button')
+						.removeAttr('disabled')
+						.end()
+						.attr('disabled','disabled');
+				})
+
+			})();
+
+		</script>
+	</body>
+
+
+</html>
+
+
+<!--
+
+	removeAttr- removes the attribute from the element.
+
+	end()-gets back the old this element.
+
+	5. CUSTOM ATTRIBUTES in HTML 5
+
+	(function(){
+				$('button').click(function(){
+					var stylesheet=$(this).data("fuck");
+					console.log(stylesheet);
+					$('link').attr("href",stylesheet+'.css');
+				})
+
+			})(); ---- using "data-"
+
+	1. prints in console that button is clicked
+
+	(function(){
+				$('button').click(function(){
+
+					console.log("button is clicked");
+				})
+
+
+	2. prints the elements when it is hovered
+
+	(function(){
+				$('button').hover(function(){
+
+					console.log(this);
+				})
+
+	3.change the text of button when it is clicked
+
+		(function(){
+				$('button').click(function(){
+
+					$(this).text("changed");
+				}) ---text changes to "changed"
+
+
+	4. changing bkcolor according to buttton using assigning variables
+	(function(){
+				$('button').click(function(){
+					var stylesheet=$(this).text().toLowerCase().trim();
+					console.log(stylesheet);
+					$('link').attr("href",stylesheet+'.css');
+				})
+
+			})();
