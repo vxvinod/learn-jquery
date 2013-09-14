@@ -1,0 +1,66 @@
+<html>
+	<head>
+		<meta charset=utf-8>	
+		<title>
+
+		</title>
+
+		<link rel="stylesheet"	href="style.css"> </link>
+		
+
+	</head>
+
+	<body>
+
+		<dl>
+			<dt> What is your name </dt>
+			<dd> life sucks </dd>
+
+			<dt> What is your name </dt>
+			<dd> life sucks </dd>
+
+			<dt> What is your name </dt>
+			<dd> life sucks </dd>
+
+			<dt> What is your name </dt>
+			<dd> life sucks </dd>
+
+			<dt> What is your name </dt>
+			<dd> life sucks </dd>
+
+			<dt> What is your name </dt>
+			<dd> life sucks </dd>
+		</dl>
+
+		<script src="jquery-1.10.2.js"> </script>
+
+		<script>
+
+		( function (){
+			var dd = $('dd');
+			dd.filter(':nth-child(n+4)').addClass('hide');
+
+			$('dl').on('mouseenter','dt',function(){
+				$(this)
+				.next()
+					.slideDown(200)
+					.siblings('dd')
+					.slideUp(300);
+				//$(this).next().show(); //to show the dd when mouse is hovered over the dt
+			});
+
+		} ) ();
+
+
+		</script>
+	</body>
+
+</html>
+
+
+<!--
+
+	show()- use slideDown(200)
+	hide()- use slideUp(300)
+$('dl').on('mouseenter','dl',function(){ tells in dl dt is selected
+	-->
