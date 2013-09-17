@@ -1,0 +1,95 @@
+<html>
+
+	<head>
+		<meta charset = utf-8 > 
+	<title> Prepend Append </title>
+	<style>
+
+		article{
+			margin:auto;
+			width:600px;
+		}
+		blackquote.co{
+			float:right;
+			background: #e3e3e3;
+			font-size: 2em;
+			width:35%;
+			aligh-text:center;
+		}
+
+	</style>
+
+	</head>
+
+	<body>
+		<h1> Cheers to Jquery </h1>
+		<article>
+			<p>Welcome to Jquery learning Jquer in 30 days it really freaks me out and 
+				my goose bumbs in each lesson </p>
+				<p>Welcome to Jquery learning Jquer in 30 days it really freaks me out and 
+				my goose bumbs in each lesson </p>
+				<p>
+					<span class=co>Welcome to Jquery learning Jquer</span> in 30 days it really freaks me out and 
+				my goose bumbs in each lesson in 30 days it really freaks me out and 
+				my goose bumbs in each lesson in 30 days it really freaks me out and 
+				my goose bumbs in each lesson in 30 days it really freaks me out and 
+				my goose bumbs in each lesson in 30 days it really freaks me out and 
+				my goose bumbs in each lesson in 30 days it really freaks me out and 
+				my goose bumbs in each lesson in 30 days it really freaks me out and 
+				my goose bumbs in each lesson in 30 days it really freaks me out and 
+				my goose bumbs in each lesson in 30 days it really freaks me out and 
+				my goose bumbs in each lesson </p>
+
+			<p>Welcome to Jquery learning Jquer in 30 days it really freaks me out and 
+				my goose bumbs in each lesson </p>
+				<p>Welcome to Jquery learning Jquer in 30 days it really freaks me out and 
+				my goose bumbs in each lesson </p>
+				<p>
+			<p>Welcome to Jquery learning Jquer in 30 days it really freaks me out and 
+				my goose bumbs in each lesson </p>
+				<p><span class=co>Welcome to Jquery learning Jquer in 30 days</span> it really freaks me out and 
+				my goose bumbs in each lesson </p>
+				<p>
+			<p>Welcome to<span class=co> Jquery learning </span>Jquer in<. 30 days it really freaks me out and 
+				my goose bumbs in each lesson </p>
+				<p>Welcome to Jquery learning Jquer in 30 days it really freaks me out and 
+				my goose <span class=co>bumbs in each lesson</span> </p>
+				<p>
+			</article>
+
+
+			<script src="jquery-1.10.2.js"> </script>
+
+			<script>
+
+				(function(){
+					var co = $('span.co').each(function(){
+						var $this = $(this);
+						$('<blackquote></blackquote>',{
+							class: 'co',
+							text: $this.text()
+							
+						}).prependTo($this.closest('p'));
+					});
+				//	$('p:nth-child(2)').after($('h1'));
+			/*		$('<h1></h1>',{
+							text:"I am kingkhan",
+							class:"helpy"
+					}).insertAfter('p:nth-child(2)'); //inserts html elements after 2nd p 
+			*/
+					//$('p').first().after("I am javascript"); // it prints after the first p
+					//$('h1').after("after h1"); //it will be printed after h1
+					//$('article').prepend("I am prepend"); //this s prepend wherer the texxt will be prepended above article
+					//$('article').append("I am append");  //this is append where the text will be appended after the selector
+
+
+
+				})();
+
+
+
+			</script>
+	</body>
+
+
+</html>
