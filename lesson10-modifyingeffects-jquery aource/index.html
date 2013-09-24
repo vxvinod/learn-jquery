@@ -1,0 +1,34 @@
+<html>
+	
+	<head>
+		<meta charset=utf-8>
+
+		<title>this keyword
+		</title>
+	</head>
+
+
+	<body>
+		
+		<h1>Read Me</h1>
+		<div class=cont>
+		<p>Hello this is vinod Hello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinod</p>
+
+		<p>Hello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinod</p>
+		</div>
+		<script src="jquery-1.10.2.js"></script>
+
+		<script>
+		$('.cont').hide();
+
+		$('h1').on('click',function(){
+			console.log($.fx.speeds);  //speed infered in source jquery
+			$.fx.speeds._default=5000; //set default
+			$.fx.speeds.jungle=1000;
+			$(this).next().slideDown('jungle');
+		})
+		</script>
+
+	</body>
+
+</html>
