@@ -1,0 +1,51 @@
+<html>
+	
+	<head>
+		<meta charset=utf-8>
+
+		<title>this keyword
+		</title>
+		<style>
+		p{margin-top: 0}
+
+		</style>
+	</head>
+
+
+	<body>
+		
+		<h1>click Me</h1>
+		<div class="container">
+		<p>Hello this is vinod Hello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinod</p>
+
+		<p>Hello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinod</p>
+		</div>
+		<script src="jquery-1.10.2.js"></script>
+
+		<script>
+		(function(){
+
+
+		
+		var container = $('div.container').hide();
+
+		jQuery.fn.flash = function(){
+			var $this=$(this);
+			return $this.slideDown(500,function(){
+				$this.delay(1000).slideUp(500);
+
+			});
+		};	
+
+		$('h1').on('click',function(){
+			container.flash();
+		})
+
+	})();
+
+		</script>
+
+	</body>
+
+
+</html>
