@@ -1,0 +1,62 @@
+<html>
+	
+	<head>
+		<meta charset=utf-8>
+
+		<title>this keyword
+		</title>
+		<style>
+		p{margin-top: 0}
+		.container{
+			width: 400px;
+			background: red;
+			padding: 2em;
+			position: relative;
+
+		}
+
+		</style>
+	</head>
+
+
+	<body>
+		
+		
+		<div class="container">
+		<p>Hello this is vinod Hello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinodHello this is vinod</p>
+
+		</div><br>
+		<p><button>Increase</button></p>
+
+		<script src="jquery-1.10.2.js"></script>
+
+		<script>
+		
+			(function(){
+
+				var box=$('div.container'),
+					w=$(window).width()/2 - box.outerWidth()/2;
+					h=$(window).height()/2 -box.outerHeight()/2;
+				$('button').on('click',function(){
+					/* $('div.container').animate({
+						'font-size':'+=5',
+						'width':'+=300'
+					},{ duration:500})
+
+						.animate({'top':500},{ duration: 3000,queue:false});
+				});*/
+
+				box.animate({
+					'left':w,
+					'top':h,
+					'position':'absolute'
+				});
+			});
+			})();
+
+		</script>
+
+	</body>
+
+
+</html>
