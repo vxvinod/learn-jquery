@@ -1,0 +1,46 @@
+<html>
+	
+	<head>
+		<meta charset=utf-8>
+
+		<title>obligatory slide</title>
+		<link rel="stylesheet" href="slide.css">
+		<style>
+		body{
+			width:600px;
+			margin:100px auto 0;
+
+		}
+		*{margin:0; padding:0;}
+		div ul li img{
+			width:600px;
+			height:300px;
+		}
+		</style>
+
+	</head>
+
+
+	<body>
+		
+		<div class="slider">
+			<ul>
+				<li><img src="img1.JPG" alt="image"></li>
+				<li><img src="img2.JPG" alt="image"></li>
+				<li><img src="img3.JPG" alt="image"></li>
+				<li><img src="img4.JPG" alt="image"></li>
+			</ul>
+		</div>
+
+		<div id="slider-nav">
+			<button data-dir="prev">Previous</button>
+			<button data-dir="next">Next</button>
+		</div>
+		<script src="jquery-1.10.2.js"></script>
+
+		<script src="transit.js"></script>
+
+	</body>
+
+
+</html>
