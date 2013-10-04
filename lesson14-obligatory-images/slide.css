@@ -3,13 +3,14 @@
 .slider{
 	width: inherit;
 	height: 300px;
-	overflow:hidden;
+	overflow:scroll;
 
 }
 
 .slider ul{
 	width: 10000px;
 	list-style: none;
+
 }
 
 .slider li{
