@@ -41,9 +41,10 @@
 		<script src="transit.js"></script>
 
 		<script>
-		var slider= new Slider($('div.slider'),$('#slider-nav'));
-		slider.nav.show().find('button').on('click',function(){
-			slider.transition(-1800);
+		var slider= new Slider($('div.slider ul'),$('#slider-nav'));
+		slider.nav.find('button').on('click',function(){
+			slider.setCurrent($(this).data('dir'));
+			slider.transition();
 		});
 
 		</script>
